@@ -1,0 +1,58 @@
+.compare-modal {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.compare-grid {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.compare-slot {
+  flex: 1;
+  border: 1px dashed #ddd;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.car-item button {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 1px 6px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+}
+
+.add-car {
+  cursor: pointer;
+}
+
+.select-car-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.select-car-modal .form-group {
+  margin-bottom: 15px;
+}
+
