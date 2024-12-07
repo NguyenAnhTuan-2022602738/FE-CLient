@@ -103,3 +103,102 @@
   cursor: pointer;
   accent-color: #007bff; /* Màu xanh cho checkbox */
 }
+
+
+/* Responsive: Thiết bị nhỏ hơn (máy tính bảng hoặc điện thoại) */
+@media (max-width: 1024px) {
+  .car-compare-detail-modal {
+    width: 90%; /* Giảm chiều rộng cho thiết bị nhỏ */
+  }
+
+  .compare-header-fixed {
+    flex-direction: column; /* Thay đổi kiểu flex để tiêu đề và checkbox nằm dưới nhau */
+    align-items: flex-start; /* Căn chỉnh tiêu đề và checkbox sang trái */
+  }
+
+  .checkbox-controls label {
+    font-size: 12px; /* Giảm kích thước chữ */
+    gap: 4px; /* Giảm khoảng cách giữa checkbox và chữ */
+  }
+
+  .checkbox-controls input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .table-compare th,
+  .table-compare td {
+    font-size: 12px; /* Thu nhỏ kích thước font chữ cho thiết bị nhỏ */
+  }
+}
+
+@media (max-width: 768px) {
+  .car-compare-detail-modal {
+    width: 95%; /* Giảm chiều rộng cho thiết bị nhỏ hơn */
+  }
+
+  .compare-header-fixed {
+    flex-direction: column; /* Thay đổi kiểu flex để tiêu đề và checkbox nằm dưới nhau */
+    align-items: flex-start; /* Căn chỉnh tiêu đề và checkbox sang trái */
+  }
+
+  .checkbox-controls label {
+    font-size: 10px; /* Giảm kích thước chữ rõ rệt hơn */
+    gap: 2px; /* Khoảng cách giữa checkbox và chữ rất nhỏ */
+  }
+
+  .checkbox-controls input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  .table-compare th,
+  .table-compare td {
+    font-size: 10px; /* Giảm kích thước font chữ rõ rệt hơn */
+  }
+
+  .imageCompare img {
+    height: 150px; /* Giảm chiều cao hình ảnh để phù hợp */
+  }
+
+  .btn-secondary {
+    width: 100%; /* Đảm bảo button mở rộng hết chiều rộng */
+  }
+
+  .stylebtn {
+    width: auto; /* Không cần ép chiều rộng cho button */
+  }
+}
+
+@media (max-width: 480px) {
+  .car-compare-detail-modal {
+    width: 100%; /* Chiều rộng 100% cho thiết bị rất nhỏ như điện thoại */
+    padding: 10px; /* Giảm padding để tiết kiệm không gian */
+  }
+
+  .compare-header-fixed {
+    padding: 5px 10px; /* Giảm padding cho tiêu đề để tiết kiệm không gian */
+  }
+
+  .compare-title {
+    font-size: 14px; /* Giảm kích thước chữ cho điện thoại */
+  }
+
+  .checkbox-controls label {
+    font-size: 10px; /* Giảm kích thước chữ cho điện thoại */
+  }
+
+  .checkbox-controls input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+  }
+
+  .table-compare th,
+  .table-compare td {
+    font-size: 10px; /* Giảm kích thước font chữ rõ rệt hơn */
+  }
+
+  .imageCompare img {
+    height: 130px; /* Giảm chiều cao hình ảnh rất nhiều cho điện thoại */
+  }
+}

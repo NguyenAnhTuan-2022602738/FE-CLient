@@ -1,88 +1,203 @@
 /* style menu */
-header{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,64,122,1) 32%, rgba(0,212,255,1) 100%);
-    width: 100%;
-    position: fixed; /* Đặt header cố định */
-    top: 0; /* Gắn vào phía trên cùng */
-    left: 0; /* Gắn vào phía bên trái */
-    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
-    padding: 10px 0; /* Tùy chỉnh padding nếu cần */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho header */
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(19, 64, 122, 1) 32%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  width: 100%;
+  position: fixed; /* Đặt header cố định */
+  top: 0; /* Gắn vào phía trên cùng */
+  left: 0; /* Gắn vào phía bên trái */
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+  padding: 10px 0; /* Tùy chỉnh padding nếu cần */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho header */
 }
-.box-head{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    line-height: 50px;
-}
-
-.box-logo .title a{
-    font-weight: bold;
-    font-size: 30px;
-    color: aliceblue;
-    text-decoration: none;
+.box-head {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
 }
 
-.box-menu ul{
-    display: flex;
-    justify-content: space-between;
+.box-logo .title a {
+  font-weight: bold;
+  font-size: 30px;
+  color: aliceblue;
+  text-decoration: none;
 }
-.box-menu ul li a{
-    color: aliceblue;
-    text-decoration: none;
-    padding: 10px 20px;
+
+.box-menu ul {
+  display: flex;
+  justify-content: space-between;
 }
-.box-menu ul li:hover{
-    opacity: 0.8;
+.box-menu ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px 20px;
 }
-.box-menu ul li a:hover{
-    opacity: 0.8;
-    color: red;
+.box-menu ul li:hover {
+  opacity: 0.8;
+}
+.box-menu ul li a:hover {
+  opacity: 0.8;
+  color: red;
 }
 /*end style menu */
 /* Style banner */
 .banner {
-    width: 100vw; /* Chiều rộng của banner chiếm toàn bộ chiều rộng của màn hình */
-    height: 600px;
-    margin-top: 70px; /* Đảm bảo không bị che bởi header cố định */
-    position: relative;
-    left: 0px; /* Đảm bảo banner căn trái màn hình */
-    right: 0; /* Đảm bảo banner căn phải màn hình */
+  width: 100vw; /* Chiều rộng của banner chiếm toàn bộ chiều rộng của màn hình */
+  height: 600px;
+  margin-top: 70px; /* Đảm bảo không bị che bởi header cố định */
+  position: relative;
+  left: 0px; /* Đảm bảo banner căn trái màn hình */
+  right: 0; /* Đảm bảo banner căn phải màn hình */
 }
 
 .carousel-item img {
-    width: 100%; /* Đảm bảo ảnh trong carousel chiếm toàn bộ chiều rộng */
-    height: 550px;
-    object-fit: cover;
+  width: 100%; /* Đảm bảo ảnh trong carousel chiếm toàn bộ chiều rộng */
+  height: 550px;
+  object-fit: cover;
 }
 /* End Style banner */
-h5>a{
-    cursor: pointer;
-    color: #282A36;
-    text-decoration: none;
+h5 > a {
+  cursor: pointer;
+  color: #282a36;
+  text-decoration: none;
 }
-h5:hover{
-    color: red;
-    text-decoration: none;
+h5:hover {
+  color: red;
+  text-decoration: none;
 }
-.boxContent{
-    margin-top: 30px;
+.boxContent {
+  margin-top: 30px;
 }
 .boxContent img {
-    width: "100%";
-    cursor:"pointer";
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  width: "100%";
+  cursor: "pointer";
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-.boxContent img:hover{
-    opacity: 0.8;
-}
-
-.popularCars{
-    margin-top: 50px;
+.boxContent img:hover {
+  opacity: 0.8;
 }
 
-.newspaper{
-    margin-top: 100px;
+.popularCars {
+  margin-top: 50px;
+}
+
+.newspaper {
+  margin-top: 100px;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  /* Đối với máy tính để bàn */
+  .box-head {
+    flex-direction: column;
+  }
+
+  .box-menu ul {
+    flex-direction: column;
+  }
+
+  .box-menu ul li {
+    text-align: left;
+  }
+
+  .box-logo .title a {
+    font-size: 24px;
+  }
+
+  .banner {
+    height: 300px; /* Giảm chiều cao cho màn hình lớn */
+  }
+
+  .carousel-item img {
+    height: 250px; /* Giảm chiều cao của ảnh để phù hợp với màn hình lớn */
+  }
+
+  .boxContent img {
+    margin-bottom: 5px;
+  }
+
+  .popularCars,
+  .newspaper {
+    margin-top: 20px; /* Giảm khoảng cách cho thiết bị lớn */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Đối với máy tính bảng */
+  .box-head {
+    flex-direction: column;
+  }
+
+  .box-menu ul {
+    flex-direction: column;
+  }
+
+  .box-menu ul li {
+    text-align: left;
+  }
+
+  .box-logo .title a {
+    font-size: 20px;
+  }
+
+  .banner {
+    height: 400px; /* Giảm chiều cao cho màn hình máy tính bảng */
+  }
+
+  .carousel-item img {
+    height: 350px; /* Giảm chiều cao của ảnh cho máy tính bảng */
+  }
+
+  .boxContent img {
+    margin-bottom: 5px;
+  }
+
+  .popularCars,
+  .newspaper {
+    margin-top: 30px; /* Tăng khoảng cách cho máy tính bảng */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Đối với điện thoại di động */
+  .box-head {
+    flex-direction: column;
+  }
+
+  .box-menu ul {
+    flex-direction: column;
+  }
+
+  .box-menu ul li {
+    text-align: left;
+  }
+
+  .box-logo .title a {
+    font-size: 18px;
+  }
+
+  .banner {
+    height: 300px; /* Giảm chiều cao cho điện thoại */
+  }
+
+  .carousel-item img {
+    height: 250px; /* Giảm chiều cao của ảnh cho điện thoại */
+  }
+
+  .boxContent img {
+    margin-bottom: 5px;
+  }
+
+  .popularCars,
+  .newspaper {
+    margin-top: 20px; /* Giảm khoảng cách cho điện thoại */
+  }
 }

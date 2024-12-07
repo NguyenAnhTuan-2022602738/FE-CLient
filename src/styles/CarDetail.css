@@ -109,7 +109,57 @@
     width: 50px;
     height: 50px;
   }
+
+  .car-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .car-price {
+    font-size: 1.1rem;
+  }
+
+  .car-segment {
+    font-size: 1rem;
+  }
+
+  .specs-header {
+    font-size: 1rem;
+  }
+
+  .specs-table th,
+  .specs-table td {
+    font-size: 0.9rem;
+  }
 }
+
+@media (max-width: 480px) {
+  .gallery-thumbs .thumbnail-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .car-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .car-price {
+    font-size: 1.1rem;
+  }
+
+  .car-segment {
+    font-size: 1rem;
+  }
+
+  .specs-header {
+    font-size: 1rem;
+  }
+
+  .specs-table th,
+  .specs-table td {
+    font-size: 0.9rem;
+  }
+}
+
 /* Description */
 .car-description h3 {
   font-size: 1.5rem;

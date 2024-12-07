@@ -9,4 +9,27 @@
   height: 550px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive: Màn hình nhỏ (máy tính bảng hoặc điện thoại) */
+@media (max-width: 768px) {
+  .slider-container {
+    height: 400px; /* Giảm chiều cao cho màn hình nhỏ */
+  }
+
+  .slide-image {
+    height: 400px;
+  }
+}
+
+/* Responsive: Màn hình rất nhỏ (điện thoại) */
+@media (max-width: 480px) {
+  .slider-container {
+    height: 300px; /* Tiếp tục giảm chiều cao */
+  }
+
+  .slide-image {
+    height: 300px;
+  }
 }
